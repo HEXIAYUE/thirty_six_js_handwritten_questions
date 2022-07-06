@@ -1,5 +1,5 @@
-function typeOf(obj) {
-    return Object.prototype.toString.call(obj).slice(8,-1).toLowerCase();
+function typeOf(value) {
+    return Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
 }
 console.log(typeOf(1)) // number
 console.log(typeOf(new Number("1111"))) // number
